@@ -9,8 +9,8 @@ resource "aws_instance" "jboss" {
   key_name          = var.key_pair
   availability_zone = var.availability_zone
   tags = {
-    "Name"        = "Liferay" #Change for the project, ex: Jboss-Standalone
-    "Environment" = "DEV"     #Change for the environment, ex: DEV
+    "Name"        = "Liferay" #Change for the project, ex: Jboss-Standalone...
+    "Environment" = "DEV"     #Change for the environment, ex: DEV...
   }
 }
 resource "aws_ebs_volume" "ebs-jboss" {
